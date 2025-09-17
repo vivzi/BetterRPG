@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better-rpg",
+	"version": "${version}",
+	"name": "BetterRPG",
+	"description": "Adds new swords, ores, dimensions, mobs etc to make Minecraft a better RPG.",
+	"authors": [
+		"Vivzi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT ",
+	"icon": "assets/better-rpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vivzi.betterrpg.BetterRPG"
+		],
+        "client": [
+          "com.vivzi.betterrpg.BetterRPGClient"
+        ],
+		"fabric-datagen": [
+			"com.vivzi.betterrpg.BetterRPGDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-rpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
